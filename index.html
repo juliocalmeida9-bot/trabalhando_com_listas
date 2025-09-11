@@ -5,13 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trabalhand0_com_listas</title>
+    <!-- css_formatação_do_codigo -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e4d1;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #b33939;
+            font-size: 2em;
+            text-align: center;
+            margin-right: 50px;
+            font-style: italic;
+            text-decoration: none;
+
+        }
+
+        h2 {
+            color: #b33939;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        /* Estilos para a tabela */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 30px auto;
+            border: 1px solid #ccc;
+            background-color: #f5e4d1;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        thead tr:first-child th {
+            background-color: aqua;
+            color: blue;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        table img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        table ul {
+
+            list-style-type: disc;
+            padding-left: 0;
+            margin: 0 auto;
+            width: fit-content;
+            text-align: left;
+           
+        }
+
+
+
+
+        table li {
+            font-size: 0.9em;
+        }
+
+        /* Estilos para as listas */
+        ol {
+            margin-left: 20px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ol[type="i"] {
+            list-style-type: lower-roman;
+        }
+
+        ul[style="square"],
+        ul[stype="square"] {
+            list-style-type: square;
+        }
+
+        ul[style="circle"] {
+            list-style-type: circle;
+        }
+
+        /* Estilos para a lista de linguagens aninhada */
+        ol li ol[type="a"] {
+            list-style-type: lower-alpha;
+        }
+
+        /* Estilos para a lista de definições */
+        dl {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #b33939;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+
+
+    </style>
 
 </head>
 
 <body>
     <h1><u>Trabalhando com listas</u></h1>
     <h2><i>Listas ordenadas</i></h2>
-    <!-- lista ordenada -->
     <ol type="i">
         <li>Acordar</li>
         <li>Ligar para o João</li>
@@ -25,7 +144,6 @@
         <li>Dormir</li>
     </ol>
 
-    <!-- lista não ordenada -->
     <h2><i>Lista não ordenadas</i></h2>
     <ul tyle="square">
         <li>Pão</li>
@@ -37,7 +155,6 @@
         <li>Feijão</li>
     </ul>
 
-    <!-- linguagens de programação -->
     <h2><i>Linguagem de programação</i></h2>
     <ol>
         <li>Antigas</li>
@@ -56,7 +173,6 @@
         </ol>
     </ol>
 
-    <!-- Lista de definições -->
     <h2><i>Listas de Definições</i></h2>
     <dl>
         <dt><b>HTML</b></dt>
@@ -67,7 +183,6 @@
         <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
     </dl>
 
-    <!-- Listas de jogos -->
     <h2><i>Lista de jogos</i></h2>
     <ol>
         <li>NES</li>
@@ -100,10 +215,92 @@
         </ul>
     </ol>
 
-<!-- Tabela -->
     <h2><i>Tabela de informações de Jogos</i></h2>
-
-
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Jogo</th>
+                    <th>Informações</th>
+                    <th>Imagens</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>River raide</td>
+                    <td>
+                        <ul>
+                            <li>Ano: 1982</li>
+                            <li>Plataforma: Atari</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="_imagens/river_raid.jpg" alt="Imagem do jogo River Raid">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mario Bros</td>
+                    <td>
+                        <ul>
+                            <li>Ano: 1985</li>
+                            <li>Plataforma: NES</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="_imagens/mario.jpg" alt="Imagem do jogo mario">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sonic</td>
+                    <td>
+                        <ul>
+                            <li>Ano: 1991</li>
+                            <li>Plataforma: MegaDrive</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="_imagens/sonic.jpg" alt="Imagem do jogo sonic">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Donkey Kong</td>
+                    <td>
+                        <ul>
+                            <li>Ano: 1994</li>
+                            <li>Plataforma: SNES</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="_imagens/donkeykong.png" alt="Imagem do jogo donkey">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Final Fantasy VII</td>
+                    <td>
+                        <ul>
+                            <li>Ano: 1997</li>
+                            <li>Plataforma: Playstation</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="_imagens/finalfantasy.jpg" alt="Imagem do jogo final">
+                    </td>
+                </tr>
+                <tr>
+                    <td>GTA V</td>
+                    <td>
+                        <ul>
+                            <li>Ano: 2013</li>
+                            <li>Plataforma: Multi Console</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="_imagens/gta.jpg" alt="Imagem do jogo GTA V">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    
 </body>
 
 </html>
